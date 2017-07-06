@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 6.11.0
+dependencies:
+  override:
+    - npm install -g mocha
+    - npm install -g chai
+test:
+  override:
+    - mocha
