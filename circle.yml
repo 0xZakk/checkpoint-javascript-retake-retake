@@ -3,8 +3,9 @@ machine:
     version: 6.11.0
 dependencies:
   override:
-    - npm install -g mocha
-    - npm install -g chai
+    - npm init -y
+    - npm install mocha
+    - npm install chai
 test:
   override:
     - mocha
