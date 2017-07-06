@@ -5,7 +5,10 @@ dependencies:
   override:
     - npm init -y
     - npm install -g mocha
+    - npm install -g mocha-junit-reporter
     - npm install chai
 test:
   override:
-    - mocha
+    - mocha test --reporter mocha-junit-reporter:
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
