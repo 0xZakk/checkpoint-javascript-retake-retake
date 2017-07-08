@@ -1,11 +1,14 @@
 # JavaScript Checkpoint
+Fork and clone this repository and complete the three sections below. Make at least one commit for each section. When finished, push your commits to your forked repository and submit a Pull Request back to the original repository.
 
+**IMPORTANT**: Make sure to use the `var` keyword for **ALL** variable declarations (for testing purposes)
 
 ## Fundamentals
 Follow the prompts and write your code in `fundamentals.js`
 
 ## Higher-Order Functions
 Follow the prompts and write your code in `hof.js`
+
 
 ## OOJS
 Follow the prompts and write your code in `oojs.js`

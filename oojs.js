@@ -1,3 +1,5 @@
+// NOTE: Make sure to use the `var` keyword for ALL variable declarations
+
 // Define a `Playlist` class with the following properties:
 // - a `title` property that is a string determined by some input (passed into the constructor)
 // - a `songs` property that is an empty array not determined by input (not passed into the constructor)

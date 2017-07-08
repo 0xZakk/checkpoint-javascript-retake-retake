@@ -1,3 +1,5 @@
+// NOTE: Make sure to use the `var` keyword for ALL variable declarations
+
 // Create an array called `colors` that contains three colors (strings).
 
 

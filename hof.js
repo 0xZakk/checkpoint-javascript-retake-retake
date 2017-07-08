@@ -1,3 +1,5 @@
+// NOTE: Make sure to use the `var` keyword for ALL variable declarations
+
 var people = [
   {name: "Jane", age: 32},
   {name: "Jessica", age: 34},
