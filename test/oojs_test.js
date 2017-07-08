@@ -6,7 +6,6 @@ var Playlist = require("../oojs.js").Playlist
 
 describe('OOJS #1', function() {
   it('Playlist is a class', function() {
-    let test = eval(oojs).Playlist
     expect(Playlist).to.be.a('function')
   })
   it('Playlist\'s constructor sets a title and songs property', function() {

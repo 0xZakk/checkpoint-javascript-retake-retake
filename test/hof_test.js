@@ -5,7 +5,7 @@ var hof = fs.readFileSync("hof.js","utf8")
 
 describe('HOF #1', function() {
   it('Array.map is used', function() {
-    expect(hof.includes('map')).to.equal(true)
+    expect(hof.match(/map/g).length).to.equal(2)
   })
   it('peoplesAges is an array', function() {
     eval(hof)
@@ -24,7 +24,7 @@ describe('HOF #1', function() {
 
 describe('HOF #2', function() {
   it('Array.filter is used', function() {
-    expect(hof.includes('filter')).to.equal(true)
+    expect(hof.match(/filter/g).length).to.equal(3)
   })
   it('peopleOlderThan35 is an array', function() {
     eval(hof)
