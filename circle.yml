@@ -3,10 +3,7 @@ machine:
     version: 6.11.0
 dependencies:
   override:
-    - npm init -y
-    - npm install -g mocha
     - npm install -g mocha-junit-reporter
-    - npm install chai
 test:
   override:
     - mocha test --reporter mocha-junit-reporter:
