@@ -10,7 +10,7 @@ Follow the prompts and write your code in `hof.js`
 ## OOJS
 Follow the prompts and write your code in `oojs.js`
 
-### Pro Tip: Test Your Code
+## Pro Tip: Test Your Code
 
 You should first test your code's functionality in the browser console via the included `index.html` file.  
 
