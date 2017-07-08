@@ -5,14 +5,15 @@
 
 
 
-
 // Create an instance of the Playlist class and set it to a variable called `myPlaylist`
 // Call the instance's `addSong` method to add a song to the instance's `songs` array
 
 
 
 
-// NOTE: FOR TESTING PURPOSES. DO NOT REMOVE OR ALTER.
-module.exports = {
-  Playlist
+// NOTE: THE CODE BELOW IS FOR TESTING PURPOSES. DO NOT REMOVE OR ALTER.
+if(typeof Playlist !== 'undefined') {
+  module.exports = {
+    Playlist
+  }
 }
