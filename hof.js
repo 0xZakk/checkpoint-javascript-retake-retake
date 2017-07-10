@@ -6,13 +6,15 @@ var people = [
   {name: "Jasmine", age: 39}
 ]
 
-// Use the `map` array method to create a new array containing the ages of each
+// #1: Use the `map` array method to create a new array containing the ages of each
 // person in the `people` array. Assign the returned array to a variable
 // called `peoplesAges`.
+// Type your solution immediately below this line:
 
 
 
 
-// Use the `filter` array method to create a new, filtered array containing only
+// #2: Use the `filter` array method to create a new, filtered array containing only
 // persons from the `people` array who are older than 35. Assign the returned array
 // to a variable called `peopleOlderThan35`.
+// Type your solution immediately below this line:

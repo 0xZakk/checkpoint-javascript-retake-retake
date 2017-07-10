@@ -1,25 +1,31 @@
 // NOTE: Make sure to use the `var` keyword for ALL variable declarations.
 
-// Create an array of strings called `colors` that contains three colors.
+// #1: Create an array of strings called `colors` that contains three colors.
+// Type your solution immediately below this line:
 
 
 
-// Access the last item in the array and assign to a variable called `last`.
+// #2: Access the last item in the array and assign to a variable called `last`.
+// Type your solution immediately below this line:
 
 
 
-// Create an empty array called `favoriteColors`.
+// #3: Create an empty array called `favoriteColors`.
+// Type your solution immediately below this line:
 
 
 
-// Create a `for` loop that adds each string in `colors` to `favoriteColors`.
+// #4: Create a `for` loop that adds each string in `colors` to `favoriteColors`.
+// Type your solution immediately below this line:
 
 
 
-// Create an object literal called `instructor` that contains three key-value pairs.
+// #5: Create an object literal called `instructor` that contains three key-value pairs.
+// Type your solution immediately below this line:
 
 
 
-// Add a `facial-hair` (spelled exactly) property to `instructor` by accessing
+// #6: Add a `facial-hair` (spelled exactly) property to `instructor` by accessing
 // it (do not change the original object you typed above) and assigning it
 // a boolean value.
+// Type your solution immediately below this line:
