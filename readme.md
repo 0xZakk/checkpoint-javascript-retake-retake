@@ -25,5 +25,5 @@ npm install
 ```
 Then call the test runner each time you want to check your code:
 ```
-mocha
+npm test
 ```
