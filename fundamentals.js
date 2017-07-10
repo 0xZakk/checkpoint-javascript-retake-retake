@@ -1,6 +1,6 @@
-// NOTE: Make sure to use the `var` keyword for ALL variable declarations
+// NOTE: Make sure to use the `var` keyword for ALL variable declarations.
 
-// Create an array called `colors` that contains three colors (strings).
+// Create an array of strings called `colors` that contains three colors.
 
 
 
@@ -12,14 +12,14 @@
 
 
 
-// Create a `for` loop that pushes each item in `colors` into `favoriteColors`.
+// Create a `for` loop that adds each string in `colors` to `favoriteColors`.
 
 
 
-// Create an `instructor` object that contains three key-value pairs.
+// Create an object literal called `instructor` that contains three key-value pairs.
 
 
 
-// Add a `facial-hair` (written like that exactly) property to `instructor` by
-// accessing it (do not change the original object you typed above) and assigning it
+// Add a `facial-hair` (spelled exactly) property to `instructor` by accessing
+// it (do not change the original object you typed above) and assigning it
 // a boolean value.

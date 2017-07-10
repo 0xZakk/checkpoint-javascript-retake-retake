@@ -6,8 +6,9 @@ var people = [
   {name: "Jasmine", age: 39}
 ]
 
-// Use the `map` array method to create a new array containing each person in the
-// `people` array's age. Assign the returned array to a variable called `peoplesAges`.
+// Use the `map` array method to create a new array containing the ages of each
+// person in the `people` array. Assign the returned array to a variable
+// called `peoplesAges`.
 
 
 
