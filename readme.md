@@ -19,11 +19,14 @@ You should first test your code's functionality in the browser console via the i
 
 Once you think your code is correct, you can run the tests that will evaluate your solutions to double-check them.
 
-To do so, first install the testing packages:
+To do so, first install the testing packages...
+
+```bash
+ $ npm install
 ```
-npm install
-```
-Then call the test runner each time you want to check your code:
-```
-npm test
+
+Then call the test runner each time you want to check your code...
+
+```bash
+ $ npm test
 ```
