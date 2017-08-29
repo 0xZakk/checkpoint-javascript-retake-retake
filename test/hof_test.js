@@ -22,11 +22,7 @@ describe('HOF #1', function() {
   })
   it('peopleNames should contain the names of each person in the people array', function() {
     let names = ["Layla", "Keanu", "Jasmine"]
-    expect(
-      peopleNames.every((name, index) => {
-        return name === names[index]
-      })
-    ).to.equal(true)
+    expect(peopleNames).to.deep.equal(names)
   })
 })
 
