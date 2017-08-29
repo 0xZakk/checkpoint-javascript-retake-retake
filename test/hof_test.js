@@ -14,19 +14,15 @@ describe('HOF #1', function() {
   catch(e) {
     console.log(e)
   }
-  it('Array.map is used', function() {
-    expect(hof.match(/map/g).length).to.equal(2)
+  it('peopleNames should be an array', function() {
+    expect(peopleNames).to.be.an('array')
   })
-  it('peoplesAges is an array', function() {
-    expect(peoplesAges).to.be.an('array')
+  it('.map should be called on `people`', function() {
+    expect(hof).to.include('people.map')
   })
-  it('peoplesAges contains the ages of persons from the people array', function() {
-    let ages = [32, 34, 39]
-    expect(
-      peoplesAges.every((age, index) => {
-        return age === ages[index]
-      })
-    ).to.equal(true)
+  it('peopleNames should contain the names of each person in the people array', function() {
+    let names = ["Layla", "Keanu", "Jasmine"]
+    expect(peopleNames).to.deep.equal(names)
   })
 })
 
@@ -46,14 +42,14 @@ describe('HOF #2', function() {
   catch(e) {
     console.log(e)
   }
-  it('Array.filter is used', function() {
-    expect(hof.match(/filter/g).length).to.equal(3)
+  it('polyglotPeople is an array', function() {
+    expect(polyglotPeople).to.be.an('array')
   })
-  it('peopleOlderThan35 is an array', function() {
-    expect(peopleOlderThan35).to.be.an('array')
+  it('.filter should be called on `people`', function() {
+    expect(hof).to.include('people.filter')
   })
-  it('peopleOlderThan35 only contains person(s) older than 35', function() {
-    expect(peopleOlderThan35.length).to.equal(1)
-    expect(peopleOlderThan35[0]).to.equal(people[2])
+  it('polyglotPeople only contains persons who know multiple languages', function() {
+    let expectedPeople = people.filter((v,i) => i!==1)
+    expect(polyglotPeople).to.deep.equal(expectedPeople)
   })
 })
