@@ -18,7 +18,7 @@ describe('HOF #1', function() {
     expect(peopleNames).to.be.an('array')
   })
   it('.map should be called on `people`', function() {
-    expect(hof.match(/people\.map/g).length).to.be.at.least(1)
+    expect(hof).to.include('people.map')
   })
   it('peopleNames should contain the names of each person in the people array', function() {
     let names = ["Layla", "Keanu", "Jasmine"]
@@ -42,15 +42,14 @@ describe('HOF #2', function() {
   catch(e) {
     console.log(e)
   }
-  it('Array.filter is used', function() {
-    expect(hof.match(/people\.filter/g).length).to.equal(1)
-  })
   it('polyglotPeople is an array', function() {
     expect(polyglotPeople).to.be.an('array')
   })
+  it('.filter should be called on `people`', function() {
+    expect(hof).to.include('people.filter')
+  })
   it('polyglotPeople only contains persons who know multiple languages', function() {
-    expect(polyglotPeople.length).to.equal(2)
-    expect(polyglotPeople[0]).to.equal(people[0])
-    expect(polyglotPeople[1]).to.equal(people[2])
+    let expectedPeople = people.filter((v,i) => i!==1)
+    expect(polyglotPeople).to.deep.equal(expectedPeople)
   })
 })
