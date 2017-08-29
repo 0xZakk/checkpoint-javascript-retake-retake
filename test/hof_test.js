@@ -14,13 +14,13 @@ describe('HOF #1', function() {
   catch(e) {
     console.log(e)
   }
-  it('should use Array.map', function() {
-    expect(hof.match(/map/g).length).to.equal(2)
-  })
-  it('should be an array', function() {
+  it('peopleNames should be an array', function() {
     expect(peopleNames).to.be.an('array')
   })
-  it('should contain the names of each person in the people array', function() {
+  it('.map should be called on `people`', function() {
+    expect(hof.match(/people\.map/g).length).to.be.at.least(1)
+  })
+  it('peopleNames should contain the names of each person in the people array', function() {
     let names = ["Layla", "Keanu", "Jasmine"]
     expect(
       peopleNames.every((name, index) => {
