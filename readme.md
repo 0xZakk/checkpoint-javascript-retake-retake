@@ -1,35 +1,29 @@
 # JavaScript Checkpoint
 
-Fork and clone this repository and complete the three sections below. Make at least one commit for each section. When you finish, push your commits to your forked repository. Wait to make your Pull Request until the end of the hour.
+## Before You Start
+
+The test suite is located in `./test`. **Before you begin anything, run `nom install.**
+
+To run the tests in the terminal, run `npm test`. Every time you make a change and save your files, you will need to manually re-run the tests. When you start, all of the tests will be failing; your goal is to make as many pass as you can in the hour provided.
+
+> HINT: read the output of the failing tests.
+
+## Instructions
+
+This checkpoint is divided into three sections:
+
+- Fundamentals in `fundamentals.js`
+- Higher-order Functions in `hof.js`
+- Object Oriented JavaScript in `oojs.js`
+
+Each section has a series of prompts written in inline-comments. Write the JavaScript necessary to complete each prompt.
+
+**Make a commit after you complete each section.**
 
 **IMPORTANT**: Make sure to use the `var` keyword for **ALL** variable declarations (for testing purposes). **DO NOT** use `const` or `let`.
 
-## Pro Tip: Test Your Code
+## Submission
 
-You should first test your code's functionality in the browser console with the included `index.html` file.
+Fork this repository and clone your fork locally. Commit as you go. When you are finished, push to GitHub.
 
-Once you think your code is correct, you can run the tests that will evaluate your solutions to double-check them.
-
-To do so, first install the testing packages...
-
-```bash
- $ npm install
-```
-
-Then call the test runner each time you want to check your code...
-
-```bash
- $ npm test
-```
-
-This will execute a set of automated tests to check that your code is fulfilling each prompt.
-
-## Fundamentals
-Follow the prompts and write your code in `fundamentals.js`
-
-## Higher-Order Functions
-Follow the prompts and write your code in `hof.js`
-
-## OOJS
-Follow the prompts and write your code in `oojs.js`
-
+**Wait until the end of the hour to make your Pull Request**
