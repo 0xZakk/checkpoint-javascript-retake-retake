@@ -28,7 +28,19 @@ var ghostBusters = [
 // called `characterNames`.
 // Type your solution immediately below this line:
 
+var characterNames = ghostBusters.map(any => {
+  return any.name 
+})
+
+console.log(characterNames)
+
 // #2: Use the `filter` array method to create a new, filtered array containing
 // only characters from the `ghostBusters` array who have 10 or more ghost KOs.
 // Assign the returned array to a variable called `superBusters`.
 // Type your solution immediately below this line:
+
+var superBusters = ghostBusters.filter(any => {
+  any.ghostKos > 10
+})
+
+console.log(superBusters)
