@@ -1,55 +1,48 @@
-var should = require("chai").should()
-var expect = require("chai").expect
-var fs = require("fs")
-var hof = fs.readFileSync("hof.js","utf8")
+var should = require("chai").should();
+var expect = require("chai").expect;
+var fs = require("fs");
+var hof = fs.readFileSync("hof.js", "utf8");
 
-describe('HOF #1', function() {
-  let section = hof.slice(
-    0,
-    hof.indexOf('// #2')
-  )
+describe("HOF #1", function() {
+  let section = hof.slice(0, hof.indexOf("// #2"));
   try {
-    eval(section)
+    eval(section);
+  } catch (e) {
+    console.log(e);
   }
-  catch(e) {
-    console.log(e)
-  }
-  it('peopleNames should be an array', function() {
-    expect(peopleNames).to.be.an('array')
-  })
-  it('.map should be called on `people`', function() {
-    expect(hof).to.include('people.map')
-  })
-  it('peopleNames should contain the names of each person in the people array', function() {
-    let names = ["Layla", "Keanu", "Jasmine"]
-    expect(peopleNames).to.deep.equal(names)
-  })
-})
+  it("characterNames should be an array", function() {
+    expect(characterNames).to.be.an("array");
+  });
+  it(".map should be called on `ghostBusters`", function() {
+    expect(hof).to.include("ghostBusters.map");
+  });
+  it("characterNames should contain the names of each person in the ghostBusters array", function() {
+    let names = [
+      "Abby Yates",
+      "Erin Gilbert",
+      "Jillian Holtzman",
+      "Patty Tolan"
+    ];
+    expect(characterNames).to.deep.equal(names);
+  });
+});
 
-describe('HOF #2', function() {
+describe("HOF #2", function() {
   let section =
-    hof.slice(
-      0,
-      hof.indexOf('// #1')
-    )
-    +
-    hof.slice(
-      hof.indexOf('// #2')
-    )
+    hof.slice(0, hof.indexOf("// #1")) + hof.slice(hof.indexOf("// #2"));
   try {
-    eval(section)
+    eval(section);
+  } catch (e) {
+    console.log(e);
   }
-  catch(e) {
-    console.log(e)
-  }
-  it('polyglotPeople is an array', function() {
-    expect(polyglotPeople).to.be.an('array')
-  })
-  it('.filter should be called on `people`', function() {
-    expect(hof).to.include('people.filter')
-  })
-  it('polyglotPeople only contains persons who know multiple languages', function() {
-    let expectedPeople = people.filter((v,i) => i!==1)
-    expect(polyglotPeople).to.deep.equal(expectedPeople)
-  })
-})
+  it("superBusters is an array", function() {
+    expect(superBusters).to.be.an("array");
+  });
+  it(".filter should be called on `ghostBusters`", function() {
+    expect(hof).to.include("ghostBusters.filter");
+  });
+  it("superBusters only contains persons who have 10 or more KOs", function() {
+    let expectedPeople = ghostBusters.filter(i => i.ghostKOs >= 10);
+    expect(superBusters).to.deep.equal(expectedPeople);
+  });
+});

@@ -1,46 +1,43 @@
-var should = require("chai").should()
-var expect = require("chai").expect
-var fs = require("fs")
-var oojs = fs.readFileSync("oojs.js","utf8")
+var should = require("chai").should();
+var expect = require("chai").expect;
+var fs = require("fs");
+var oojs = fs.readFileSync("oojs.js", "utf8");
 
-
-describe('OOJS #1', function() {
+describe("OOJS #1", function() {
   try {
-    var Playlist = require("../oojs.js").Playlist
+    var Student = require("../oojs.js").Student;
+  } catch (e) {
+    console.log(e);
   }
-  catch(e) {
-    console.log(e)
-  }
-  it('Playlist is a class', function() {
-    expect(Playlist).to.be.a('function')
-  })
-  it('Playlist\'s constructor sets a title and songs property', function() {
-    var testPlaylist = new Playlist('test')
-    expect(testPlaylist.title).to.be.a('string')
-    expect(testPlaylist.songs).to.be.an('array')
-    expect(testPlaylist.addSong).to.be.a('function')
-  })
-  it('Playlist has an addSong method', function() {
-    var testPlaylist = new Playlist('test')
-    expect(testPlaylist.addSong).to.be.a('function')
-  })
-})
+  it("Student is a class", function() {
+    expect(Student).to.be.a("function");
+  });
+  it("Student's constructor sets a title and songs property", function() {
+    var testStudent = new Student("test");
+    expect(testStudent.name).to.be.a("string");
+    expect(testStudent.grade).to.be.an("number");
+    expect(testStudent.graduate).to.be.a("function");
+  });
+  it("Student has an graduate method", function() {
+    var testStudent = new Student("test", "B-");
+    expect(testStudent.graduate).to.be.a("function");
+  });
+});
 
-describe('OOJS #2', function() {
+describe("OOJS #2", function() {
   try {
-    eval(oojs)
+    eval(oojs);
+  } catch (e) {
+    console.log(e);
   }
-  catch(e) {
-    console.log(e)
-  }
-  it('myPlaylist is an instance of Playlist', function() {
-    expect(myPlaylist.__proto__.constructor.name).to.equal("Playlist")
-  })
-  it('myPlaylist has properties', function() {
-    expect(myPlaylist.title).to.be.a('string')
-    expect(myPlaylist.songs).to.be.an('array')
-  })
-  it('myPlaylist has at least one song', function() {
-    expect(myPlaylist.songs.length).to.be.greaterThan(0)
-  })
-})
+  it("myStudent is an instance of Student", function() {
+    expect(myStudent.__proto__.constructor.name).to.equal("Student");
+  });
+  it("myStudent has properties", function() {
+    expect(myStudent.name).to.be.a("string");
+    expect(myStudent.grade).to.be.an("number");
+  });
+  it("myStudent has an A+", function() {
+    expect(myStudent.grade).to.equal("A+");
+  });
+});
