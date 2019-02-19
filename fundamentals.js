@@ -3,6 +3,8 @@
 // #1: Create an array of strings called `superHeroes` that contains three super heroes.
 // Type your solution immediately below this line:
 
+var superHeroes = ["batman", "superman", "spiderman"]
+
 // #2: Access the last item in the array and assign to a variable called `last`.
 // Type your solution immediately below this line:
 
