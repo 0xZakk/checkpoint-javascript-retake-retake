@@ -28,14 +28,20 @@ for (let index = 0; index < array.length; index++) {
 // #5: Create an object literal called `batman` that contains three key-value pairs.
 // Type your solution immediately below this line:
 
-var batman = {
-animal = 'bat',
-age = 40,
-son = 'boy', 
-home = 'has-secret-lair'
-}
+// var batman = {
+// animal = 'bat',
+// age = 40,
+// son = 'boy', 
+// }
 
 // #6: Add a `has-secret-lair` (spelled exactly) property to `batman` by accessing
 // it (do not change the original object you typed above) and assigning it
 // a boolean value.
 // Type your solution immediately below this line:
+
+// var batman = {
+//     animal = 'bat',
+//     age = 40,
+//     son = 'boy', 
+//     home = 'has-secret-lair'
+//     }

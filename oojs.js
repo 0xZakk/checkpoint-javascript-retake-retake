@@ -7,10 +7,23 @@
 // - a `graduate` method that sets the `grade` property to the string `A+`
 // Type your solution immediately below this line:
 
-const student = [name, course, grade, graduate]
+class student {name; course; grade; graduate}
 
+constructor = student(
+  this.name = first, name,
+)
+
+constructor = student(
+  this.graduate = "A+",
+)
 
 // #2: Create an instance of the Student class and set it to a variable called `myStudent`
+
+constructor = student(
+  this.myStudent = myStudent,
+)
+
+
 // Call the instance's `graduate` method to set the student's grade to an 'A+'
 // Type your solution immediately below this line:
 
