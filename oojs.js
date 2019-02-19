@@ -6,6 +6,11 @@
 // - a `grade` property for their grade in the class
 // - a `graduate` method that sets the `grade` property to the string `A+`
 // Type your solution immediately below this line:
+class Student {
+  name(firstName, lastName);
+  
+  constructor
+}
 
 // #2: Create an instance of the Student class and set it to a variable called `myStudent`
 // Call the instance's `graduate` method to set the student's grade to an 'A+'
