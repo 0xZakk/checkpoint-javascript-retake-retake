@@ -2,10 +2,13 @@
 
 // #1: Define a `Student` class with the following properties:
 // - a `name` property for their first and last name
-// - a `class` property for the class they're a student in
+// - a `course` property for the class they're a student in
 // - a `grade` property for their grade in the class
 // - a `graduate` method that sets the `grade` property to the string `A+`
 // Type your solution immediately below this line:
+
+const student = [name, course, grade, graduate]
+
 
 // #2: Create an instance of the Student class and set it to a variable called `myStudent`
 // Call the instance's `graduate` method to set the student's grade to an 'A+'
