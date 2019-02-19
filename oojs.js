@@ -15,12 +15,14 @@ class Student {
     this.graduate = graduate
   }
 };
-var joey = new Student()
+
+
 
 
 // #2: Create an instance of the Student class and set it to a variable called `myStudent`
 // Call the instance's `graduate` method to set the student's grade to an 'A+'
 // Type your solution immediately below this line:
+var myStudent = new Student("joey", "CS", "A+")
 
 // NOTE: THE CODE BELOW IS FOR TESTING PURPOSES. DO NOT REMOVE OR ALTER.
 if (typeof Student !== "undefined") {
