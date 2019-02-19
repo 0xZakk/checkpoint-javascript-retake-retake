@@ -27,8 +27,19 @@ var ghostBusters = [
 // character in the `ghostBusters` array. Assign the returned array to a variable
 // called `characterNames`.
 // Type your solution immediately below this line:
+var characterNames = ghostBusters.map(function(ghostBusters){
+return ghostBusters.name
+})
+console.log(characterNames)
 
 // #2: Use the `filter` array method to create a new, filtered array containing
 // only characters from the `ghostBusters` array who have 10 or more ghost KOs.
 // Assign the returned array to a variable called `superBusters`.
 // Type your solution immediately below this line:
+
+var superBusters = ghostBusters.filter(function (ghostBusters){
+  if (ghostBusters.ghostKOs > 9){
+    return ghostBusters.name
+  }
+})
+console.log(superBusters)
