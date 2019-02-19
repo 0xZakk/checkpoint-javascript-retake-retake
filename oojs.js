@@ -7,9 +7,25 @@
 // - a `graduate` method that sets the `grade` property to the string `A+`
 // Type your solution immediately below this line:
 
+class Student {
+  constructor() {
+    this.name = "fullname";
+    this.course = "course";
+    this.grade = "grade";
+    this.graduate = graduate(grade);
+  }
+
+  graduate(A) {
+    this.grade.push("A+");
+  }
+}
+
 // #2: Create an instance of the Student class and set it to a variable called `myStudent`
 // Call the instance's `graduate` method to set the student's grade to an 'A+'
 // Type your solution immediately below this line:
+
+var myStudent = new Student("");
+myStudent.grade("A+");
 
 // NOTE: THE CODE BELOW IS FOR TESTING PURPOSES. DO NOT REMOVE OR ALTER.
 if (typeof Student !== "undefined") {
