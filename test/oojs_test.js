@@ -12,8 +12,8 @@ describe("OOJS #1", function() {
   it("Student is a class", function() {
     expect(Student).to.be.a("function");
   });
-  it("Student's constructor sets a title and songs property", function() {
-    var testStudent = new Student("test");
+  it("Student's constructor joey", function() {
+    var testStudent = new Student("test", "wdi", 1);
     expect(testStudent.name).to.be.a("string");
     expect(testStudent.grade).to.be.an("number");
     expect(testStudent.graduate).to.be.a("function");
